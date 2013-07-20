@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "MasterViewController.h"
+    //#import "MasterViewController.h"
 
 @implementation AppDelegate
 
@@ -18,10 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        // Override point for customization after application launch.
+    _viewController = [[AddressBookViewController alloc]
+                       initWithNibName:@"AddressBookViewController" bundle:nil];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window setRootViewController:_viewController];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

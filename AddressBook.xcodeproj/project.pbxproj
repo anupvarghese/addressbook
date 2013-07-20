@@ -17,10 +17,9 @@
 		9EF0C3A9179ABE40001C4F5C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF0C3A8179ABE40001C4F5C /* Default.png */; };
 		9EF0C3AB179ABE40001C4F5C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF0C3AA179ABE40001C4F5C /* Default@2x.png */; };
 		9EF0C3AD179ABE40001C4F5C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF0C3AC179ABE40001C4F5C /* Default-568h@2x.png */; };
-		9EF0C3B0179ABE40001C4F5C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF0C3AE179ABE40001C4F5C /* MainStoryboard.storyboard */; };
 		9EF0C3B3179ABE40001C4F5C /* AddressBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EF0C3B1179ABE40001C4F5C /* AddressBook.xcdatamodeld */; };
-		9EF0C3B6179ABE40001C4F5C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF0C3B5179ABE40001C4F5C /* MasterViewController.m */; };
-		9EF0C3B9179ABE40001C4F5C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF0C3B8179ABE40001C4F5C /* DetailViewController.m */; };
+		9EF0C3C2179AC607001C4F5C /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF0C3C0179AC607001C4F5C /* AddressBookViewController.m */; };
+		9EF0C3C3179AC607001C4F5C /* AddressBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EF0C3C1179AC607001C4F5C /* AddressBookViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,12 +37,10 @@
 		9EF0C3A8179ABE40001C4F5C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9EF0C3AA179ABE40001C4F5C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9EF0C3AC179ABE40001C4F5C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9EF0C3AF179ABE40001C4F5C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9EF0C3B2179ABE40001C4F5C /* AddressBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AddressBook.xcdatamodel; sourceTree = "<group>"; };
-		9EF0C3B4179ABE40001C4F5C /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		9EF0C3B5179ABE40001C4F5C /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		9EF0C3B7179ABE40001C4F5C /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		9EF0C3B8179ABE40001C4F5C /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9EF0C3BF179AC607001C4F5C /* AddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookViewController.h; sourceTree = "<group>"; };
+		9EF0C3C0179AC607001C4F5C /* AddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewController.m; sourceTree = "<group>"; };
+		9EF0C3C1179AC607001C4F5C /* AddressBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressBookViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,13 +91,11 @@
 			children = (
 				9EF0C3A5179ABE40001C4F5C /* AppDelegate.h */,
 				9EF0C3A6179ABE40001C4F5C /* AppDelegate.m */,
-				9EF0C3AE179ABE40001C4F5C /* MainStoryboard.storyboard */,
-				9EF0C3B4179ABE40001C4F5C /* MasterViewController.h */,
-				9EF0C3B5179ABE40001C4F5C /* MasterViewController.m */,
-				9EF0C3B7179ABE40001C4F5C /* DetailViewController.h */,
-				9EF0C3B8179ABE40001C4F5C /* DetailViewController.m */,
 				9EF0C3B1179ABE40001C4F5C /* AddressBook.xcdatamodeld */,
 				9EF0C39D179ABE40001C4F5C /* Supporting Files */,
+				9EF0C3BF179AC607001C4F5C /* AddressBookViewController.h */,
+				9EF0C3C0179AC607001C4F5C /* AddressBookViewController.m */,
+				9EF0C3C1179AC607001C4F5C /* AddressBookViewController.xib */,
 			);
 			path = AddressBook;
 			sourceTree = "<group>";
@@ -174,7 +169,7 @@
 				9EF0C3A9179ABE40001C4F5C /* Default.png in Resources */,
 				9EF0C3AB179ABE40001C4F5C /* Default@2x.png in Resources */,
 				9EF0C3AD179ABE40001C4F5C /* Default-568h@2x.png in Resources */,
-				9EF0C3B0179ABE40001C4F5C /* MainStoryboard.storyboard in Resources */,
+				9EF0C3C3179AC607001C4F5C /* AddressBookViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,8 +183,7 @@
 				9EF0C3A3179ABE40001C4F5C /* main.m in Sources */,
 				9EF0C3A7179ABE40001C4F5C /* AppDelegate.m in Sources */,
 				9EF0C3B3179ABE40001C4F5C /* AddressBook.xcdatamodeld in Sources */,
-				9EF0C3B6179ABE40001C4F5C /* MasterViewController.m in Sources */,
-				9EF0C3B9179ABE40001C4F5C /* DetailViewController.m in Sources */,
+				9EF0C3C2179AC607001C4F5C /* AddressBookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,14 +196,6 @@
 				9EF0C3A0179ABE40001C4F5C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9EF0C3AE179ABE40001C4F5C /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9EF0C3AF179ABE40001C4F5C /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
